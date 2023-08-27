@@ -1,0 +1,146 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0; /* Para remover margens padrão do body */
+    padding: 0; /* Para remover preenchimentos padrão do body */
+}
+
+header {
+    background-image: url('../images/captainmarvelheader.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% center; /* Posiciona o background no centro à direita */
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+    height: auto;
+    margin-left: 30px; /* Adicione um espaçamento à direita da imagem */
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    color: white;
+    list-style: none;
+    margin-left: 40px;
+}
+
+nav ul a {
+    color: white; /* Altere a cor do texto para branco */
+    text-decoration: none; /* Remova o sublinhado dos links */
+    position: relative; /* Adiciona posição relativa para o link */
+    font-weight: bold; /* Deixa as letras mais grossas */
+}
+
+nav ul .active {
+    position: relative;
+}
+
+nav ul .active::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: rgb(254, 116, 103);
+    position: absolute;
+    bottom: -5px;
+    left: 10%;
+}
+
+section img {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-grow: 1;
+}
+
+.title {
+    position: absolute; /* Define a posição absoluta para o elemento .title */
+    top: 77%; /* Ajusta a posição verticalmente */
+    left: 21%; /* Ajuste a porcentagem para posicionar mais para a esquerda */
+    transform: translateY(-50%); /* Mantém a centralização vertical */
+    z-index: 1; /* Coloca o elemento .title acima da imagem de fundo */
+    width: 450px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.titulo_catalogo h1{
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 80px;
+    color: rgb(39, 37, 37); /* Altere a cor do texto para branco */
+    font-weight: bold; /* Deixa as letras mais grossas */
+}
+
+.titulo_catalogo h1.linha_titulo::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: rgb(254, 116, 103);
+    position: absolute;
+    bottom: -90px;
+    left: 49%;
+    transform: translateX(-50%);
+}
+
+.section_colunas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.coluna {
+    flex: 1;
+    max-width: 30%;
+}
+
+.item {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    padding: 20px;
+}
+
+.item h4 {
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.botao_comprar {
+    background: linear-gradient(to bottom, rgb(254, 116, 103), rgb(252, 56, 54));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+.item img {
+    max-width: 100%; /* Limitar a largura das imagens a 100% do contêiner */
+    height: auto; /* Manter a proporção original da imagem */
+}
